@@ -1,11 +1,19 @@
 <template>
-  <Tutorial/>
+  <section class="container">
+    <div>
+      <Counter></Counter>
+      <hr>
+      <Counter></Counter>
+      <hr>
+      <Counter></Counter>
+    </div>
+  </section>
 </template>
-
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  name: 'IndexPage'
-})
+<script>
+import Counter from '~/components/Counter.vue'
+export default {
+  components: {
+    Counter
+  }
+}
 </script>

@@ -6,6 +6,8 @@
 
 `docker-compose exec app bash`
 
+`cd nuxt_app`
+
 `npm run dev`
 
 http://localhost:3000/
