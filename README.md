@@ -1,14 +1,21 @@
 # nuxt-app
 ## 開発手順
+
 ### 開発開始時
-docker-compose up -d
-docker-compose exec app bash
-npm run dev
-下記にアクセスする
+`docker-compose up -d`
+
+`docker-compose exec app bash`
+
+`npm run dev`
+
 http://localhost:3000/
-その後はほっとリロードされる
+
+command + S：ホットリロード
 
 ### 開発終了時
-ctrl + C
-exit
-docker compose down
+
+ctrl + C でdocker止める
+
+`exit`
+
+`docker compose down`
