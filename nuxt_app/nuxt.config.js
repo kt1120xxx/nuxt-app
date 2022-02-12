@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -55,7 +57,12 @@ export default {
         "@babel/transform-runtime",
         "@babel/transform-async-to-generator"
       ]
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        '_': 'lodash'
+      })
+    ]
   },
   watchers:{
     webpack:{
