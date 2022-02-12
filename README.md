@@ -20,4 +20,4 @@ ctrl + C でdocker止める
 
 `exit`
 
-`docker compose down`
+`docker-compose down`
